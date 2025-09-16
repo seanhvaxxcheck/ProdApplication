@@ -1,0 +1,95 @@
+{
+  "name": "MyGlassCase - Collection Management",
+  "short_name": "MyGlassCase",
+  "description": "Professional inventory management platform for collectors of Milk Glass and Jadite collectibles",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#22c55e",
+  "orientation": "portrait-primary",
+  "categories": ["productivity", "lifestyle"],
+  "lang": "en-US",
+  "dir": "ltr",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/icons/F11E94A8-7D46-41AA-B474-B6848FC8F2F9.PNG",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/F11E94A8-7D46-41AA-B474-B6848FC8F2F9.PNG",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/F11E94A8-7D46-41AA-B474-B6848FC8F2F9.PNG",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/F11E94A8-7D46-41AA-B474-B6848FC8F2F9.PNG",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/F11E94A8-7D46-41AA-B474-B6848FC8F2F9.PNG",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/F11E94A8-7D46-41AA-B474-B6848FC8F2F9.PNG",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/F11E94A8-7D46-41AA-B474-B6848FC8F2F9.PNG",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/F11E94A8-7D46-41AA-B474-B6848FC8F2F9.PNG",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Add Item",
+      "short_name": "Add",
+      "description": "Add a new item to your collection",
+      "url": "/?action=add",
+      "icons": [
+        {
+          "src": "/icons/F11E94A8-7D46-41AA-B474-B6848FC8F2F9.PNG",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "View Inventory",
+      "short_name": "Inventory",
+      "description": "View your collection inventory",
+      "url": "/?page=inventory",
+      "icons": [
+        {
+          "src": "/icons/F11E94A8-7D46-41AA-B474-B6848FC8F2F9.PNG",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  }
+}

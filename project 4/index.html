@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    
+    <!-- SEO Meta Tags -->
+    <title>MyGlassCase - Professional Collection Management for Milk Glass & Jadite</title>
+    <meta name="description" content="Professional inventory management platform for collectors of Milk Glass and Jadite collectibles. Track, value, and organize your collection with market analysis and automated monitoring." />
+    <meta name="keywords" content="milk glass, jadite, collection management, inventory tracking, collectibles, antiques, glassware, Fire-King, Fenton, Anchor Hocking" />
+    <meta name="author" content="MyGlassCase" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="MyGlassCase - Professional Collection Management" />
+    <meta property="og:description" content="Track, value, and organize your Milk Glass and Jadite collection with professional inventory management tools." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://app.myglasscase.com" />
+    <meta property="og:site_name" content="MyGlassCase" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MyGlassCase - Professional Collection Management" />
+    <meta name="twitter:description" content="Track, value, and organize your Milk Glass and Jadite collection with professional inventory management tools." />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://app.myglasscase.com" />
+    
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="theme-color" content="#22c55e">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/F11E94A8-7D46-41AA-B474-B6848FC8F2F9.PNG">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/F11E94A8-7D46-41AA-B474-B6848FC8F2F9.PNG">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/F11E94A8-7D46-41AA-B474-B6848FC8F2F9.PNG">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  </head>
+  <body class="light">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- PWA Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator && !window.location.hostname.includes('webcontainer')) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+              console.log('SW registered: ', registration);
+            })
+            .catch((registrationError) => {
+              console.log('SW registration failed (this is normal in some environments): ', registrationError);
+            });
+        });
+      } else {
+        console.log('Service Worker registration skipped in this environment');
+      }
+    </script>
+  </body>
+</html>

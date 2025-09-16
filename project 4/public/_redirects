@@ -1,0 +1,13 @@
+# Force HTTPS redirect
+http://app.myglasscase.com/* https://app.myglasscase.com/:splat 301!
+
+# Ensure robots.txt and sitemap.xml are accessible
+/robots.txt   /robots.txt   200
+/sitemap.xml  /sitemap.xml  200
+
+# PWA files
+/manifest.json /manifest.json 200
+/sw.js /sw.js 200
+
+# Security headers for all pages
+/*    /index.html   200   X-Frame-Options=DENY   X-Content-Type-Options=nosniff   Referrer-Policy=strict-origin-when-cross-origin   X-XSS-Protection=1; mode=block   X-Robots-Tag=index,follow
